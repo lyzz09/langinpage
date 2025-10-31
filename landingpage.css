@@ -1,17 +1,5 @@
-/* Importação da fonte (Recomendado colocar no HTML, mas funciona aqui também) */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
 
-/* Variáveis de Cores (para facilitar a manutenção) */
-:root {
-    --cor-primaria: #004a99; /* Azul escuro da identidade/logo (baseado no PDF) */
-    --cor-secundaria: #DC3545; /* Vermelho/Laranja para destaque/CTA (baseado no PDF) */
-    --cor-fundo: #f8f9fa; /* Cinza bem claro para o corpo */
-    --cor-texto: #212529; /* Preto/Cinza escuro para texto */
-    --cor-fundo-destaque: #ffffff; /* Branco para caixas de conteúdo */
-    --cor-borda: #dee2e6;
-}
-
-/* Estilos Gerais */
 * {
     margin: 0;
     padding: 0;
@@ -21,8 +9,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: var(--cor-texto);
-    background-color: var(--cor-fundo);
+    color: #212529; 
+    background-color: #f8f9fa;
 }
 
 main {
@@ -31,23 +19,23 @@ main {
     padding: 20px;
 }
 
-/* Links */
 a {
     text-decoration: none;
     color: inherit;
+    display: block; 
+    padding: 0;
+    margin: 0;
 }
 
-/* Cabeçalho */
 header {
-    background-color: var(--cor-fundo-destaque);
+    background-color: #5b93f3;
     padding: 15px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centraliza a logo no topo */
+    text-align: center;
 }
 
-/* Seção de Destaque (Topo) */
-section:first-of-type {
-    background: linear-gradient(to right, #ffffff, #f0f0f0); /* Gradiente suave */
+.a {
+    background: linear-gradient(to right, #3868df, #f0f0f0);
     padding: 40px 20px;
     text-align: center;
     border-radius: 8px;
@@ -55,35 +43,35 @@ section:first-of-type {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-.a {
+.b {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-.b {
+.c {
     text-align: center;
 }
 
-.h99 { /* SAIBA TUDO SOBRE */
+.d {
     font-size: 1.2rem;
     font-weight: 400;
-    color: var(--cor-primaria);
+    color: #004a99;
     text-transform: uppercase;
     margin-bottom: 5px;
 }
 
-.h22 { /* Planilhas */
+.e {
     font-size: 3rem;
     font-weight: 900;
-    color: var(--cor-texto);
+    color: #212529; 
     margin-bottom: 20px;
 }
 
-.c { /* Botão: Aprenda com o e-book GRATUITO */
-    background-color: var(--cor-secundaria);
-    color: white;
+.f { 
+    background-color: #DC3545; 
+    color: rgb(190, 222, 240);
     padding: 12px 30px;
     border: none;
     border-radius: 5px;
@@ -92,96 +80,115 @@ section:first-of-type {
     cursor: pointer;
     transition: background-color 0.3s;
     text-transform: uppercase;
+    margin: 0;
+    line-height: 1; 
+    text-align: center;
 }
 
-.c:hover {
+.f a {
+    color: white; 
+    padding: 0;
+}
+
+.f:hover {
     background-color: #c42d3a;
 }
 
-.p8 {
+.g { 
     margin: 0;
+    padding: 0;
+    line-height: 1.1; 
 }
 
-/* Seção de Conteúdo e Formulário */
-.s2 {
-    background-color: var(--cor-fundo-destaque);
+.h {
+    background-color: #b4f2f8; 
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
 }
 
-.d2 {
+.w {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     gap: 30px;
-    margin-bottom: 30px;
 }
 
-.d3 h1 {
+.i { 
+    display: block; 
+    text-align: center; 
+    gap: 30px;
+    margin-bottom: 0;
+    padding-bottom: 0; 
+}
+
+.x {
+
+}
+
+.j h1 {
     font-size: 1.8rem;
-    color: var(--cor-primaria);
+    color: #004a99;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-.d3 h2 { /* Um material educativo... */
+.j h2 {
     font-size: 1rem;
     font-weight: 400;
     color: #6c757d;
 }
 
-.img3 {
+.k { 
     width: 100%;
-    max-width: 200px; /* Ajuste para o tamanho da capa do e-book */
+    max-width: 200px;
     height: auto;
-    border: 1px solid var(--cor-borda);
+    border: 1px solid #dee2e6;
     border-radius: 4px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; 
 }
 
-.lista-caracteristicas {
+.l { 
     list-style: none;
     text-align: left;
     padding: 0;
     margin: 20px 0;
+    display: inline-block; 
 }
 
-.lista-caracteristicas li {
+.l li {
     font-size: 1rem;
     margin-bottom: 8px;
-    color: var(--cor-texto);
+    color: #212529;
     font-weight: 400;
 }
 
-.lista-caracteristicas li::before {
-    content: "✓ "; /* Substitui o emoji da lista por um ícone */
-    color: var(--cor-primaria);
+.l li::before {
+    content: "✓ "; 
+    color: #004a99;
     font-weight: bold;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
 }
 
-.titulo-cadastro {
+.m { 
     font-size: 1.4rem;
-    color: var(--cor-secundaria);
+    color: #DC3545;
     font-weight: 700;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 25px;
 }
 
-/* Formulário */
 .download-form {
-    max-width: 600px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 .download-form fieldset {
-    border: 2px solid var(--cor-primaria);
+    border: 2px solid #004a99;
     padding: 20px;
     border-radius: 8px;
 }
@@ -189,44 +196,43 @@ section:first-of-type {
 .download-form legend p {
     font-size: 1.2rem;
     font-weight: 700;
-    color: var(--cor-primaria);
+    color: #004a99;
     padding: 0 10px;
 }
 
-.g {
+.n { 
     margin-bottom: 15px;
 }
 
-.g label {
+.n label {
     display: block;
     margin-bottom: 5px;
     font-weight: 500;
-    color: var(--cor-texto);
+    color: #212529;
 }
 
-.g input[type="text"],
-.g input[type="email"],
-.g input[type="tel"],
-.g select {
+.n input[type="text"],
+.n input[type="email"],
+.n input[type="tel"],
+.n select {
     width: 100%;
     padding: 10px;
-    border: 1px solid var(--cor-borda);
+    border: 1px solid #dee2e6;
     border-radius: 4px;
     font-size: 1rem;
     transition: border-color 0.3s;
 }
 
-.g input:focus,
-.g select:focus {
-    border-color: var(--cor-primaria);
+.n input:focus,
+.n select:focus {
+    border-color: #004a99;
     outline: none;
     box-shadow: 0 0 5px rgba(0, 74, 153, 0.2);
 }
 
-/* Campo de Envio (Botão) */
-.i {
+.p { 
     width: 100%;
-    background-color: var(--cor-primaria);
+    background-color: #004a99;
     color: white;
     padding: 15px;
     border: none;
@@ -237,22 +243,28 @@ section:first-of-type {
     transition: background-color 0.3s;
     margin-top: 20px;
     text-transform: uppercase;
+    line-height: 1; 
+    text-align: center;
 }
 
-.i:hover {
+.p a {
+    color: white;
+    padding: 0;
+}
+
+.p:hover {
     background-color: #003366;
 }
 
-.j { /* *Campos obrigatórios */
+.q { 
     text-align: right;
     font-size: 0.85rem;
     color: #6c757d;
     margin-top: 10px;
 }
 
-/* Seção de Benefícios (Inferior) */
-.k {
-    background-color: var(--cor-fundo-destaque);
+.r {
+    background-color: #ffffff;
     padding: 30px 40px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -260,43 +272,35 @@ section:first-of-type {
     margin-bottom: 30px;
 }
 
-.k h2:first-child { /* Planilha Eletrônica não é mais uma opção... */
+.r h2:first-child { 
     font-size: 1.5rem;
-    color: var(--cor-secundaria);
+    color: #DC3545;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-.lista-beneficios {
+.s { 
     list-style: none;
     padding: 0;
     margin: 20px 0;
     text-align: left;
-    display: inline-block; /* Centraliza o bloco da lista */
+    display: inline-block;
 }
 
-.lista-beneficios li {
+.s li {
     font-size: 1rem;
     margin-bottom: 10px;
     font-weight: 400;
 }
 
-.lista-beneficios li strong {
-    font-weight: 700;
-}
-
-.k p { /* Explorando todo esse potencial... */
+.r p { 
     font-size: 1.1rem;
     margin-bottom: 25px;
     color: #495057;
 }
 
-.k figure {
-    margin: 20px 0;
-}
-
-.l { /* Botão: BAIXAR E-BOOK (inferior) */
-    background-color: var(--cor-primaria);
+.t { 
+    background-color: #004a99;
     color: white;
     padding: 10px 25px;
     border: none;
@@ -308,123 +312,97 @@ section:first-of-type {
     text-transform: uppercase;
     margin-top: 10px;
     margin-bottom: 20px;
+    line-height: 1;
 }
 
-.l:hover {
+.t a {
+    color: white;
+    padding: 0;
+}
+
+.t:hover {
     background-color: #003366;
 }
 
-.k h1 { /* Entenda as funções */
+.u { 
     font-size: 1.8rem;
-    color: var(--cor-texto);
+    color: #212529;
     font-weight: 700;
     margin-top: 30px;
     margin-bottom: 5px;
 }
 
-.k h2:last-of-type { /* PROCV / SE ÍNDICE / CORRESP */
+.v { 
     font-size: 1.4rem;
-    color: var(--cor-secundaria);
+    color: #DC3545;
     font-weight: 900;
     line-height: 1.2;
 }
 
-/* Rodapé */
 footer {
-    background-color: var(--cor-primaria);
+    background-color: #004a99;
     color: white;
     padding: 30px 20px;
     text-align: center;
-    border-radius: 0 0 8px 8px; /* Cantos arredondados na parte inferior do main */
-    margin-top: -20px; /* Compensa o padding do main, se necessário */
-    width: calc(100% - 40px); /* Ajusta para largura do main com padding */
-    max-width: 1200px;
+    border-radius: 0 0 8px 8px;
     margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
 }
 
-footer h2 { /* Central de Relacionamento... */
+footer h2 {
     font-size: 1.2rem;
     font-weight: 400;
     margin-bottom: 15px;
 }
 
-/* Linha Divisória */
 hr {
     border: 0;
     height: 1px;
-    background-color: var(--cor-borda);
+    background-color: #dee2e6;
     margin: 20px 0;
 }
 
-/* =========================================
-   MEDIA QUERIES (Responsividade)
-   ========================================= */
-
 @media (min-width: 768px) {
-    /* Ajustes para telas maiores (Desktop/Tablet) */
 
-    .a {
+    .b { 
         flex-direction: row;
         justify-content: center;
         text-align: left;
     }
 
-    .d2 {
+    .w {
         flex-direction: row;
-        justify-content: space-around;
         align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .i { 
+        width: 48%; 
         text-align: left;
     }
 
-    .d3 {
-        max-width: 50%;
+    .x { 
+        width: 48%; 
+    }
+    
+    .m { 
+        text-align: left;
     }
 
-    .img3 {
-        width: auto;
-        max-width: 250px;
-    }
-
-    .lista-caracteristicas {
+    .download-form {
+        max-width: 100%;
         margin: 0;
     }
 
-    .lista-caracteristicas li {
-        font-size: 1.1rem;
-    }
-
-    /* Campos de Cidade e UF na mesma linha */
-    .g.h {
+    .n.o {
         display: inline-block;
-        width: 48%; /* Quase metade, deixando espaço para o gap */
+        width: 48%; 
         margin-right: 4%;
     }
 
-    .g.h:last-of-type {
+    .n.o:last-of-type {
         margin-right: 0;
-    }
-
-    .download-form fieldset {
-        padding: 30px;
-    }
-}
-
-@media (min-width: 1024px) {
-    /* Ajustes para telas maiores */
-    main {
-        padding: 40px;
-    }
-
-    .h22 {
-        font-size: 4rem;
-    }
-
-    .d3 h1 {
-        font-size: 2.2rem;
-    }
-
-    .k h2:first-child {
-        font-size: 1.8rem;
     }
 }
 
@@ -432,3 +410,4 @@ hr {
 
 
  
+
